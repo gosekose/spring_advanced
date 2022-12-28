@@ -18,7 +18,7 @@ public class ThreadLocalTest {
         };
 
         Runnable userB = ()-> {
-            service.logic("userA");
+            service.logic("userB");
         };
 
         Thread threadA = new Thread(userA);
