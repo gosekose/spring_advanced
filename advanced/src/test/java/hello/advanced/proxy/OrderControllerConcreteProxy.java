@@ -1,8 +1,7 @@
 package hello.advanced.proxy;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.proxy.v2.OrderControllerV2;
-import hello.advanced.proxy.v2.OrderServiceV2;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.before.v2.OrderControllerV2;
 
 public class OrderControllerConcreteProxy extends OrderControllerV2 {
 

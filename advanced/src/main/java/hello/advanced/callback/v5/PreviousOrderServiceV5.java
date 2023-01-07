@@ -1,7 +1,7 @@
 package hello.advanced.callback.v5;
 
-import hello.advanced.callback.trace.callback.TraceTemplate;
-import hello.advanced.callback.logtrace.LogTrace;
+import hello.advanced.proxy.trace.callback.TraceTemplate;
+import hello.advanced.proxy.logtrace.LogTrace;
 import org.springframework.stereotype.Service;
 
 @Service

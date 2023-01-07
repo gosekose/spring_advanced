@@ -1,7 +1,7 @@
 package hello.advanced.proxy;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.proxy.v2.OrderRepositoryV2;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.before.v2.OrderRepositoryV2;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

@@ -1,6 +1,6 @@
 package hello.advanced.config;
 
-import hello.advanced.proxy.v1.*;
+import hello.advanced.before.v1.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

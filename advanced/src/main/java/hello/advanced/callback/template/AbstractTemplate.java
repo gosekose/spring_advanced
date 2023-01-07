@@ -1,7 +1,7 @@
 package hello.advanced.callback.template;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.callback.trace.TraceStatus;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.proxy.trace.TraceStatus;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

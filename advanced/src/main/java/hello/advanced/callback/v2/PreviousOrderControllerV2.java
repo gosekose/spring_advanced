@@ -1,7 +1,7 @@
 package hello.advanced.callback.v2;
 
 import hello.advanced.callback.hellotrace.HelloTraceV2;
-import hello.advanced.callback.trace.TraceStatus;
+import hello.advanced.proxy.trace.TraceStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

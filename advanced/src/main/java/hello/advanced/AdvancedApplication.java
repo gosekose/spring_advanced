@@ -1,12 +1,8 @@
 package hello.advanced;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.callback.logtrace.ThreadLocalTrace;
-import hello.advanced.config.*;
-import hello.advanced.config.postprocessor.BeanPostProcessorConfig;
-import hello.advanced.proxy.v1_proxy.InterfaceProxyConfig;
-import hello.advanced.proxy.v2_dynamicproxy.DynamicProxyBasicConfig;
-import hello.advanced.proxy.v2_dynamicproxy.DynamicProxyFilterConfig;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.proxy.logtrace.ThreadLocalTrace;
+import hello.advanced.proxy.v6.aspect.AopConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +16,7 @@ import org.springframework.context.annotation.Import;
 //@Import(DynamicProxyBasicConfig.class)
 //@Import(ProxyFactoryConfigV1.class)
 //@Import(ProxyFactoryConfigV2.class)
-@Import(BeanPostProcessorConfig.class)
+//@Import(BeanPostProcessorConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.advanced.proxy")
 public class AdvancedApplication {
 
@@ -28,9 +24,10 @@ public class AdvancedApplication {
 		SpringApplication.run(AdvancedApplication.class, args);
 	}
 
-	@Bean
-	public LogTrace logTrace() {
-		return new ThreadLocalTrace();
-	}
+    @Bean
+    public LogTrace logTrace() {
+        return new ThreadLocalTrace();
+    }
+
 
 }

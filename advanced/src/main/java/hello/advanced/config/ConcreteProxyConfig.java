@@ -1,12 +1,12 @@
 package hello.advanced.config;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.proxy.v2.OrderControllerV2;
-import hello.advanced.proxy.v2.OrderRepositoryV2;
-import hello.advanced.proxy.v2.OrderServiceV2;
-import hello.advanced.proxy.v2.v2_proxy.OrderControllerConcreteProxy;
-import hello.advanced.proxy.v2.v2_proxy.OrderRepositoryConcreteProxy;
-import hello.advanced.proxy.v2.v2_proxy.OrderServiceConcreteProxy;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.before.v2.OrderControllerV2;
+import hello.advanced.before.v2.OrderRepositoryV2;
+import hello.advanced.before.v2.OrderServiceV2;
+import hello.advanced.before.v2.v2_proxy.OrderControllerConcreteProxy;
+import hello.advanced.before.v2.v2_proxy.OrderRepositoryConcreteProxy;
+import hello.advanced.before.v2.v2_proxy.OrderServiceConcreteProxy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

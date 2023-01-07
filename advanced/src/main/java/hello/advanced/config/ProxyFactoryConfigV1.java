@@ -1,8 +1,8 @@
 package hello.advanced.config;
 
-import hello.advanced.callback.logtrace.LogTrace;
-import hello.advanced.proxy.v1.*;
-import hello.advanced.proxy.v3.advice.LogTraceAdvice;
+import hello.advanced.before.v1.*;
+import hello.advanced.proxy.logtrace.LogTrace;
+import hello.advanced.before.v3.advice.LogTraceAdvice;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.framework.ProxyFactory;
