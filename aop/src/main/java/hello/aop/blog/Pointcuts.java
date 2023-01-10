@@ -6,8 +6,9 @@ import org.aspectj.lang.annotation.Pointcut;
 @Slf4j
 public class Pointcuts {
 
-    @Pointcut("execution(* hello.aop.blog.*.save(..))")
+    @Pointcut("execution(* hello.aop.blog.*.save*(..))")
     public void allSave() {}
+
 
     @Pointcut("execution(* hello.aop.blog.*.load(..))")
     public void allLoad() {}

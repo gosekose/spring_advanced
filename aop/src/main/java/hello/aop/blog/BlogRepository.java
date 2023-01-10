@@ -1,15 +1,19 @@
 package hello.aop.blog;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 @Slf4j
 @Repository
+@RequiredArgsConstructor
 public class BlogRepository {
 
+    private final BlogSaveInterRepository blogSaveInterRepository;
     public void save(String content) {
 
         log.info("[BlogRepository.save 실행]");
+        blogSaveInterRepository.saveInternal();
         if (content == null) {
             log.info("[BlogRepository.save 에러]");
             throw new IllegalArgumentException();

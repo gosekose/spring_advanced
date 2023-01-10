@@ -17,19 +17,16 @@ public class ApplyAspect {
         public Object saveAround(ProceedingJoinPoint joinPoint) throws Throwable {
 
             try{
-
                 log.info("[Around AllSave ProceedingJoinPoint]");
+                log.info("[Around AllSave ProceedingJoinPoint] {}", joinPoint.getSignature());
                 Object result = joinPoint.proceed();
                 log.info("[Around AllSave ProceedingJoinPoint] result = {}", result);
-
                 return result;
 
             } catch (Exception e) {
-
                 log.info("[Around AllSave Exception] message = {}", e.getMessage());
                 throw e;
             }
-
         }
     }
 
